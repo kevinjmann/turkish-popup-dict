@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Turkish Popup Dictionary Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+            "http://*.tr/*", "https://*.tr/*"
+            ],
+            "css":["content.css"],
+            "js": ["content.js"],
+            "run_at":"document_end",
+            "all_frames":true
+        }
+    ],
+    "browser_action": {
+        "default_icon":"globe.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "contextMenus"
+    ]
+
+}

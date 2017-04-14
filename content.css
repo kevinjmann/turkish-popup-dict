@@ -1,0 +1,8 @@
+.selection_bubble {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:#e6e9ed;
+  
+}
